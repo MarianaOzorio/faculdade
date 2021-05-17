@@ -49,19 +49,26 @@ class Main {
         if(x >= v[1]){
           status = -1;
         }
+        else{
+          status = 1;
+        }
       }
       else {
         return false;
-      }      
+      }   
 
       for(int i = 0; i < v.length; i++){
-        if(x <= v[1] && status !=(-1)){
+        if(x <= v[i] && status ==1){
           x = v[i];
-          System.out.println("O vetor está em ordem crescente");
-          return true;
-        } 
+          continue;
+        }
+        else{
+          status = 0;
+          System.out.println("O vetor não está em ordem crescente");
+          return false;
+        }
       }
-      System.out.println("O vetor não está em ordem crescente");
-      return false;
-  }           
+      System.out.println("O vetor está em ordem crescente");
+      return true;
+  }          
 }
