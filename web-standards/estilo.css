@@ -9,17 +9,13 @@ body {
 }
 
 .job {
-    margin-right: 8px;
-    margin-bottom: 8px;
-    width: 30%;
+    width: 327px;
     height: 200px;
-    background-color: #cccccc;
 }
 
 header, footer {
     padding: 20px;
     width: 100%;
-    clear: both;
 }
 
 header {
@@ -44,21 +40,13 @@ h1 {
 }    
 
 h3 {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/*aside {
-    padding: 18px;
-    float: left;
-    width: 20%;
-    background-color: rgb(36, 35, 35);
-}*/
-
 main {
-    float: left;
     width: 95%;
-    padding: 15px;
-    background-color: #f0f0f5;    
+    padding: 20px;
+    background-color: #f0f0f5;  
 } 
 
 .flex-container {
@@ -66,15 +54,15 @@ main {
     flex-wrap: wrap;
 }
 
-ul {
+#listaIndex {
     list-style-type: none;
     background-color: rgb(218, 247, 58);
-    text-align: center;
+    text-align: left;
 }
 
-li {
+.itemListaIndex {
     margin: 20px;
-    font: normal 15px arial;
+    font: normal 17px arial;
     display: inline-block;
 }
 
@@ -87,3 +75,34 @@ i {
     padding: 5px;
 }
 
+span {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.itemPortifolio {
+    border: solid 1px black;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.itemPortifolio:hover {
+    background-color:rgb(218, 247, 58);
+    color: black;
+}
+
+#textoMinhaHistoria {
+    text-align: justify;
+    width: 75%;
+}
+
+aside {
+    float: right;
+    width: 24%;
+}
+
+.topicosCurriculo {
+    border-bottom: solid 2px rgb(218, 247, 58);
+    margin-bottom: 20px;
+}
